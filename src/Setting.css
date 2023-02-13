@@ -1,0 +1,23 @@
+.set{display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: initial;
+    width: 46%;
+    margin: auto;
+    padding-top: 35px;
+    margin-left: 44%;
+}
+#butons{
+    float: left;
+    background-color: #61B846;
+    width: 44%;
+    padding: 11px 2px;
+    border-radius: 10px;
+    border: none;
+}
+.span-total-div{
+    display: flex;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 600;
+}

@@ -1,0 +1,134 @@
+.card-main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: flex-end;
+    z-index: 99;
+}
+.opacity-layer{
+    top: 0;
+    left: 0;
+    width: 100%;height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+.cart-main{
+    width: 350px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background:rgb(255, 255, 255);
+    flex-direction: column;
+    transform: translateX(100%);
+    animation: slide 0.3s ease-in-out forwards;
+    display: flex;
+}
+.header{
+display: flex;
+align-items: center;
+padding: 20px 15px;
+justify-content: space-between;
+border-bottom: 1px solid rgba(0, 0,0, 0.5);
+}
+.heading{
+    display: flex;
+    align-items: center;
+    font-size: 29px;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: system-ui;
+    color: blue;
+    font-weight: 400;
+}
+.closed-btn{
+    color: rgb(69, 153, 0);
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.closed-btn:hover{background-color: rgb(69, 153, 0);
+color: white;
+}
+.closed-text{
+display: none;
+}
+
+.empty-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+    gap: 20px;
+}
+#button-empt{ background:rgb(69, 153, 0);
+        color: white;
+        width: 50%;
+        padding:9px;
+        font-family:sans-serif;
+        letter-spacing: 1px;
+        font-weight:600;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out ;
+}
+#button-empt:hover{
+    background: rgb(69, 153, 0);
+}
+.cart-footer{
+border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+.sub-total{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    color: black;
+}
+.subtotal-text{
+    color: rgb(69, 153, 0);
+    text-transform: uppercase;
+margin-bottom: 0;
+font-size: 20px;
+font-weight: 700;
+letter-spacing: 1px;
+font-family: 'Roboto';
+}
+.button-subtotal{
+    padding: 20px 15px;
+}
+.empt-span{ 
+       font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+@keyframes slide {
+ 0%{transform: translateX(100%);
+} 
+100%{transform: translateX(0%);
+}   
+}
+
+.line{
+
+    width: 240px;
+    height: 2px;
+    background-color: rgb(197, 196, 196);
+}
+
+input{
+
+    border: solid 2px 0px 2px 0px #000;
+}
